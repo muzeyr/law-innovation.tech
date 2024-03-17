@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import ReduxProvider from "./redux-provider";
 
-const inter = Inter({ subsets: ["latin"] });
+import { geologica } from "@/app/ui/fonts";
+import "@/app/ui/globals.css";
+import "../../public/css/weather-icons/weather-icons.min.css";
+import "../../public/css/weather-icons/weather-icons-wind.min.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,12 +13,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${geologica.className} antialiased`}>
+      <body>
+        <ReduxProvider>{children}</ReduxProvider>
+      </body>
     </html>
   );
 }
