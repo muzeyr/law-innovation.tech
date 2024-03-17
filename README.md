@@ -1,8 +1,4 @@
-İşte README dosyasının İngilizce olarak hazırlanması için bir örnek:
-
----
-
-# Weather Web App Prototype
+# Weather Web App
 
 This is a prototype of a weather web app built using TypeScript and Next.js. It utilizes the OpenWeatherMap API to fetch weather data for a specific location and displays the 5-day weather forecast.
 
