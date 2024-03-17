@@ -3,6 +3,7 @@
 This is a prototype of a weather web app built using TypeScript and Next.js. It utilizes the OpenWeatherMap API to fetch weather data for a specific location and displays the 5-day weather forecast.
 
 ## Demo
+
 Click this link for a demo visualization: [here](https://law-innovation-tech-5zlswj3z1-muzeyr1.vercel.app/).
 
 ## Features
@@ -24,7 +25,7 @@ git clone https://github.com/muzeyr/law-innovation.tech.git
 2. Install dependencies:
 
 ```
-cd weather-web-app
+cd law-innovation.tech
 npm install
 ```
 
