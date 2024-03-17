@@ -24,7 +24,9 @@ const CurrentWeather = ({
           <div key={index} className={"text-center"}>
             <div className="space-y-4">
               <WeatherIcon className={`wi wi-owm-${day.weather[0].id}`} />
-              <p className="text-sm">{day.weather[0].description}</p>
+              <p className="text-sm">
+                {day.weather[0].description.toUpperCase()}
+              </p>
               <div className="w-[96px] flex flex-col items-center gap-2 mx-auto">
                 <WeatherInfo
                   temperature={`Temperature: ${day?.main?.temp}`}
