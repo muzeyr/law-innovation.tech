@@ -12,7 +12,7 @@ const CurrentWeather = ({
   name: string;
 }) => {
   const { list } = currentWeather;
-
+  console.log("list", list);
   return (
     <div>
       <div>
