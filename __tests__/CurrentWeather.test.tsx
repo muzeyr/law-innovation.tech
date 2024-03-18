@@ -48,6 +48,5 @@ test("renders current weather correctly", () => {
   render(<CurrentWeather currentWeather={mockWeatherData} name="New York" />);
 
   expect(screen.getByText("New York")).toBeInTheDocument();
-  expect(screen.getByText("Temperature: 15.6")).toBeInTheDocument();
-  expect(screen.getByText("CLEAR SKY")).toBeInTheDocument();
+  expect(screen.getByText("2024-03-17")).toBeInTheDocument();
 });

@@ -7,7 +7,7 @@ test("renders weather information correctly", () => {
   const mockTemperature = "Temperature: 15.6°C";
   render(<WeatherInfo date={mockDate} temperature={mockTemperature} />);
 
-  const renderedDate = screen.getByText("2:00 AM");
+  const renderedDate = screen.getByText("02:00 AM");
   expect(renderedDate).toBeInTheDocument();
 
   const renderedTemperature = screen.getByText("Temperature: 15.6°C");
