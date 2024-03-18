@@ -40,7 +40,7 @@ const CurrentWeather = ({
         <BackButtonIcon />
         <CityName text={name} />
       </div>
-      <div className="flex">
+      <div className="flex justify-center">
         {listNew.map((item, index) => (
           <button
             key={index}
