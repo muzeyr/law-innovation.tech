@@ -4,6 +4,7 @@ import {
   fetchCoordinates,
 } from "@/app/services/weather-data";
 import { notFound } from "next/navigation";
+import { useState } from "react";
 
 type Params = {
   searchParams: {
@@ -26,8 +27,6 @@ export default async function Weather({ searchParams }: Params) {
   if (!currentWeather) {
     notFound();
   }
-  console.log("currentWeather", currentWeather);
-
   return (
     <main>
       <section>

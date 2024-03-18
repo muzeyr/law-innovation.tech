@@ -2,9 +2,6 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { CurrentWeather } from "@/app/ui/weather";
 
-import { CityName, WeatherIcon, WeatherInfo } from "@/app/ui/weather/index";
-import { WeatherData } from "@/app/lib/types/weather.type";
-
 const mockWeatherData = {
   city: {
     id: 1,
@@ -34,7 +31,7 @@ const mockWeatherData = {
         {
           id: 800,
           main: "Clear",
-          description: "clear sky",
+          description: "CLEAR SKY",
           icon: "01d",
         },
       ],
@@ -44,7 +41,6 @@ const mockWeatherData = {
       pop: 0,
       dt_txt: "2024-03-17 12:00:00",
     },
-    // Diğer günlerin verileri
   ],
 };
 
@@ -53,6 +49,5 @@ test("renders current weather correctly", () => {
 
   expect(screen.getByText("New York")).toBeInTheDocument();
   expect(screen.getByText("Temperature: 15.6")).toBeInTheDocument();
-  expect(screen.getByText("clear sky")).toBeInTheDocument();
-  // Diğer testler için gerekli kontrolleri yap
+  expect(screen.getByText("CLEAR SKY")).toBeInTheDocument();
 });
