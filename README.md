@@ -4,7 +4,7 @@ This is a prototype of a weather web app built using TypeScript and Next.js. It 
 
 ## Demo
 
-Click this link for a demo visualization: [here](https://law-innovation-tech-5zlswj3z1-muzeyr1.vercel.app/).
+Click this link for a demo visualization: [here](https://law-innovation-tech-eklpo8vaa-muzeyr1.vercel.app/).
 
 ## Features
 
