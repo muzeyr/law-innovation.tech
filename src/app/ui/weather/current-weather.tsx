@@ -3,7 +3,7 @@
 import { BackButtonIcon } from "@/app/ui/elements/buttons/back-buttons";
 import { WeatherData } from "@/app/lib/types/weather.type";
 import { CityName, WeatherIcon, WeatherInfo } from "@/app/ui/weather/index";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type GroupedData = {
   day: string;
@@ -34,6 +34,10 @@ const CurrentWeather = ({
   const [selectedItem, setSelectedItem] = useState<GroupedData | null>(null);
 
   const listNew = groupByDate(list);
+  useEffect(() => {
+    console.log(111);
+    setSelectedItem(listNew[0]);
+  }, []);
   return (
     <div>
       <div>

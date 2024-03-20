@@ -4,7 +4,6 @@ import {
   fetchCoordinates,
 } from "@/app/services/weather-data";
 import { notFound } from "next/navigation";
-import { useState } from "react";
 
 type Params = {
   searchParams: {
